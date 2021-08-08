@@ -54,6 +54,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run -nb \#1d1f21 -fn zig -nf \#00b23d
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# Toggle Float
+bindsym $mod+m floating toggle
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -210,4 +213,5 @@ bar {
 
 bindsym $mod+shift+x exec i3lock -c 1d1f21
 exec_always $HOME/.config/i3/gifbg ~/.config/i3/op.gif
+exec_always xrdb ~/.config/urxvt/config
 exec compton -f
