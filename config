@@ -238,4 +238,5 @@ exec_always killall dunst
 exec_always dunst
 exec_always flameshot
 exec_always xrdb ~/.config/Xdefaults
+
 exec compton -f
